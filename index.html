@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+	<!--========================-->
+	<!--※※【網頁顯示資訊設定】※※-->	
+	<!--========================-->
+	
+	<!--使用編碼-->
+	<meta charset="UTF-8">
+	
+	<!--頁籤設定-->
+	<title>書豪練習作：購物清單</title>
+	<link rel="shortcut icon" href="img/favicon.ico">
+
+	<!--把螢幕解析度的寬度變成載具的寬度(RWD用)-->
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+	<!--網站描述與關鍵字設定-->
+	<meta name="description" content="購物清單">
+	<meta name="keywords" content="購物清單">
+
+	<!--網站貼在Facebook上時顯示的資訊-->
+	<meta property="og:title" content="購物清單">
+	<meta property="og:description" content="書豪練習作：購物清單">
+	<meta property="og:type" content="website">
+	<meta property="og:url" content="https://zshao1031.github.io/BuyList/">
+	<meta property="og:image" content="img/thumbnail.jpg">
+
+	<!--IE相容性設定-->
+	<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+
+	<!--載入google font的Fjalla One字體-->
+	<link href="https://fonts.googleapis.com/css?family=Fjalla+One" rel="stylesheet">
+
+	<!--載入Font Awesome的Icons-->
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
+
+	<!--載入CSS-->
+	<link rel="stylesheet" href="css/CSSReset.css">
+	<link rel="stylesheet" href="css/all.css">
+
+	<!--載入jQuery-->	
+	<script src="js/jquery-3.3.1.min.js"></script>
+
+	<!--載入javascript-->
+	<script src="js/all.js"></script>
+
+</head>
+
+<body>
+	<div class="wrap" ></div>
+		<h1 class="header">MyBuyList 購物清單</h1>
+
+		<div id="myBuyList">
+			<div class="control_Panel">
+				<label for="input_Name">產品名</label>
+				<input type="text" id="input_Name">
+				<label for="input_Price">價錢</label>
+				<input type="text" id="input_Price">
+				<span class="addItem">+新增</span>
+			</div>
+			
+			<ul id="items_List">
+				<li class="buyItem">
+					<div class="item_Name">1.吹風機</div>
+					<div class="item_Price">300 $</div>
+					<div class="delete_Button">X</div>
+				</li>
+				<li class="buyItem">
+					<div class="item_Name">2.麥克筆</div>
+					<div class="item_Price">9000 $</div>
+					<div class="delete_Button">X</div>
+				</li>
+			
+			</ul>
+
+			<div class="totalAmount_Panel">
+				<div>總價</div>
+				<div class="total_Price">0 $</div>
+			</div>
+
+		</div>
+
+		
+	</div>
+
+</body>
+	
+</html>
