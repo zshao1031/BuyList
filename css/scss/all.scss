@@ -1,3 +1,8 @@
+$color_Black: #444;
+$color_Yellow: #FFC954;
+$color_Red: #FF3D4A;
+$color_White: #f3f3f3;
+
 /*===========================*/
 /*【通用設定】*/
 
@@ -18,7 +23,7 @@
 
 html, body
 {
-    font-family: 微軟正黑體;
+    font-family: "Roboto", sans-serif ,"微軟正黑體";
     height: 100%;
     width: 100%;
     
@@ -39,4 +44,161 @@ html, body
 
     /*軸線排列方式*/
     flex-direction: column;
+
+    background-color: $color_Yellow;
 }
+
+.wrap
+{
+    display: inline-block;
+    border: solid 4px $color_Black;  
+    box-shadow: 0px 0px 30px rgba(0,0,0,0.2);
+}
+
+/*===========================*/
+
+.header
+{
+    background-color: $color_Red;
+    color: $color_White;
+    border-bottom: solid 4px $color_Black;
+    padding: 20px;
+    font-size: 30px;
+    font-weight: bold;
+}
+
+/*===========================*/
+
+#myBuyList
+{
+    padding: 20px;
+    background-color: $color_White;
+}
+
+
+.control_Panel
+{
+    border: solid 3px $color_Black;
+    padding: 20px;
+
+    & label
+    {
+        vertical-align: middle;
+        font-size: 16px;
+        font-weight: bold;
+    }
+
+
+    & input
+    {
+        width: 100px;
+        border: solid 3px black;
+        padding: 2px 4px;
+    }
+}
+
+.addItem
+{
+    border: solid 3px $color_Black;
+    cursor: pointer;
+    margin-left: 10px;
+    padding: 5px;
+    font-size: 16px;
+    font-weight: bold;
+
+    &:hover
+    {
+        background-color: $color_Red;
+        color: $color_White;
+    }
+}
+
+/*===========================*/
+
+#items_List
+{
+    margin-top: 10px;
+    padding: 5px;
+    
+}
+
+.buyItem
+{
+    position: relative;
+    border: solid 3px $color_Black;
+    margin-top: 10px;
+    padding: 7px;
+
+    font-weight: 900;
+}
+
+.item_Name
+{
+    display: inline-block;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.item_Price
+{
+    display: inline-block;
+    position: absolute;
+    right: 40px;
+    padding: 2px 5px 1px 5px;
+    font-size: 16px;
+    font-weight: bold;
+    background-color: $color_Yellow;
+}
+
+.delete_Button
+{
+    display: inline-block;
+    position: absolute;
+    right: 10px;
+    padding: 0px 6px;
+    cursor: pointer;
+
+    &:hover
+    {
+        background-color: $color_Red;
+        color: $color_White;
+    }
+}
+
+
+/*===========================*/
+
+.totalAmount_Panel
+{
+    position: relative;
+    border: solid 3px $color_Black;
+    margin-top: 10px;
+    padding: 5px;
+    margin: 10px 5px 0px 5px;
+    
+    font-weight: 900;
+
+    background-color: $color_Red;
+    color: $color_White;
+}
+
+.totalAmount_Title
+{
+    font-size: 16px;
+    font-weight: bold;
+    vertical-align: middle;
+}
+
+#total_Price
+{
+    position: absolute;
+    top: 5px;
+    right: 40px;
+    padding-left: 5px;
+    padding-right: 5px;
+    font-size: 16px;
+    font-weight: bold;
+    vertical-align: middle;
+}
+
+

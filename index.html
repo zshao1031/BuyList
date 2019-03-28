@@ -31,8 +31,8 @@
 	<!--IE相容性設定-->
 	<meta http-equiv="X-UA-Compatible" content="IE=Edge">
 
-	<!--載入google font的Fjalla One字體-->
-	<link href="https://fonts.googleapis.com/css?family=Fjalla+One" rel="stylesheet">
+	<!--載入google font的Roboto字體-->
+	<link href="https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,700,900" rel="stylesheet">
 
 	<!--載入Font Awesome的Icons-->
 	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
@@ -50,35 +50,32 @@
 </head>
 
 <body>
-	<div class="wrap" ></div>
+
+	<div class="wrap">
 		<h1 class="header">MyBuyList 購物清單</h1>
 
 		<div id="myBuyList">
+
 			<div class="control_Panel">
 				<label for="input_Name">產品名</label>
-				<input type="text" id="input_Name">
+				<input type="text" id="input_Name" placeholder="ex:甜甜圈">
 				<label for="input_Price">價錢</label>
-				<input type="text" id="input_Price">
+				<input type="text" id="input_Price" placeholder="ex:100">
 				<span class="addItem">+新增</span>
 			</div>
 			
 			<ul id="items_List">
-				<li class="buyItem">
+				<!--抓取JSON檔的資料自動生成-->
+				<!-- <li class="buyItem">
 					<div class="item_Name">1.吹風機</div>
 					<div class="item_Price">300 $</div>
 					<div class="delete_Button">X</div>
-				</li>
-				<li class="buyItem">
-					<div class="item_Name">2.麥克筆</div>
-					<div class="item_Price">9000 $</div>
-					<div class="delete_Button">X</div>
-				</li>
-			
+				</li> -->
 			</ul>
 
 			<div class="totalAmount_Panel">
-				<div>總價</div>
-				<div class="total_Price">0 $</div>
+				<div class="totalAmount_Title">總價</div>
+				<div id="total_Price">0 $</div>
 			</div>
 
 		</div>

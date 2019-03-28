@@ -14,7 +14,7 @@
 
 /*===========================*/
 html, body {
-  font-family: 微軟正黑體;
+  font-family: "Roboto", sans-serif ,"微軟正黑體";
   height: 100%;
   width: 100%;
   /*使用flex對齊*/
@@ -34,5 +34,132 @@ html, body {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  background-color: #FFC954;
+}
+
+.wrap {
+  display: inline-block;
+  border: solid 4px #444;
+  -webkit-box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.2);
+          box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.2);
+}
+
+/*===========================*/
+.header {
+  background-color: #FF3D4A;
+  color: #f3f3f3;
+  border-bottom: solid 4px #444;
+  padding: 20px;
+  font-size: 30px;
+  font-weight: bold;
+}
+
+/*===========================*/
+#myBuyList {
+  padding: 20px;
+  background-color: #f3f3f3;
+}
+
+.control_Panel {
+  border: solid 3px #444;
+  padding: 20px;
+}
+
+.control_Panel label {
+  vertical-align: middle;
+  font-size: 16px;
+  font-weight: bold;
+}
+
+.control_Panel input {
+  width: 100px;
+  border: solid 3px black;
+  padding: 2px 4px;
+}
+
+.addItem {
+  border: solid 3px #444;
+  cursor: pointer;
+  margin-left: 10px;
+  padding: 5px;
+  font-size: 16px;
+  font-weight: bold;
+}
+
+.addItem:hover {
+  background-color: #FF3D4A;
+  color: #f3f3f3;
+}
+
+/*===========================*/
+#items_List {
+  margin-top: 10px;
+  padding: 5px;
+}
+
+.buyItem {
+  position: relative;
+  border: solid 3px #444;
+  margin-top: 10px;
+  padding: 7px;
+  font-weight: 900;
+}
+
+.item_Name {
+  display: inline-block;
+  font-size: 16px;
+  font-weight: bold;
+}
+
+.item_Price {
+  display: inline-block;
+  position: absolute;
+  right: 40px;
+  padding: 2px 5px 1px 5px;
+  font-size: 16px;
+  font-weight: bold;
+  background-color: #FFC954;
+}
+
+.delete_Button {
+  display: inline-block;
+  position: absolute;
+  right: 10px;
+  padding: 0px 6px;
+  cursor: pointer;
+}
+
+.delete_Button:hover {
+  background-color: #FF3D4A;
+  color: #f3f3f3;
+}
+
+/*===========================*/
+.totalAmount_Panel {
+  position: relative;
+  border: solid 3px #444;
+  margin-top: 10px;
+  padding: 5px;
+  margin: 10px 5px 0px 5px;
+  font-weight: 900;
+  background-color: #FF3D4A;
+  color: #f3f3f3;
+}
+
+.totalAmount_Title {
+  font-size: 16px;
+  font-weight: bold;
+  vertical-align: middle;
+}
+
+#total_Price {
+  position: absolute;
+  top: 5px;
+  right: 40px;
+  padding-left: 5px;
+  padding-right: 5px;
+  font-size: 16px;
+  font-weight: bold;
+  vertical-align: middle;
 }
 /*# sourceMappingURL=all.css.map */
